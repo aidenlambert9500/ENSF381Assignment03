@@ -1,0 +1,188 @@
+header {
+  background-color: #333;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px 20px 10px;
+  background-color: #333;
+}
+.flex-container a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.shop-now button {
+  padding: 10px;
+  margin: 20px;
+  background-color: #4caf50;
+  border-radius: 8px;
+}
+.shop-now button a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.customer-reviews {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+.product-table {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.product-item {
+  flex: 1 1 auto;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.product-item:hover {
+  background-color: #ffffff;
+}
+
+.product-image {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #4caf50;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 18px;
+}
+.add-to-cart:hover {
+  background-color: #4ca049;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact-method {
+  background-color: #ddd;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.social-media-link {
+  text-decoration: none;
+}
+.social-media-link:hover {
+  color: #007bff;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.password-wrapper{
+  display: flex;
+  align-items: center;
+}
+.password-wrapper button{margin-left: 5px;}
+.password-wrapper form{margin-right: 5px;}
+.login-button {
+  background-color: #4caf50;
+  display: flex;
+  align-items: center;
+
+  
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  opacity: 0.5;
+}
+.login-button:hover {
+  opacity: 1;
+  background-color: #4ca049;
+}
+
+.signup-link {
+  color: #007bff;
+  margin: 10px;
+  text-decoration: none;
+}
+.signup-link:hover {
+  text-decoration: underline;
+}
