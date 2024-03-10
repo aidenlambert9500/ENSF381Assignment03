@@ -23,10 +23,9 @@ function addToCart(productName, unitPrice) {
 
 function updateCartDisplay() {
     const cartTable = document.getElementById('cartTable');
-   
+
     cartTable.innerHTML = '';
 
-   
     cart.forEach(item => {
         const row = cartTable.insertRow();
         const cellProductName = row.insertCell(0);
@@ -38,10 +37,15 @@ function updateCartDisplay() {
         cellUnitPrice.textContent = `$${item.unitPrice.toFixed(2)}`;
         cellQuantity.textContent = item.quantity;
 
- 
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.className = 'add-to-cart';
+        removeButton.addEventListener('mouseover', function () {
+            removeButton.style.backgroundColor = '#ff0000';
+        });
+        removeButton.addEventListener('mouseout', function () {
+            removeButton.style.backgroundColor = ''; // Reset to default background color
+        });
         removeButton.onclick = function () {
             removeFromCart(item.productName);
         };

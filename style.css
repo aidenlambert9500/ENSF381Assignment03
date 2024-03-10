@@ -236,20 +236,6 @@ input {
   margin: 20px;
 }
 
-.remove-button {
-
-  background-color: #4caf50;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  opacity: 0.5;
-}
-
-.remove-button:hover {
-  
-  background-color: #ff0000;
-  opacity: 1;
-}
 #cartSection {
   text-align: center;
   margin: 50px auto; 
@@ -321,8 +307,7 @@ button:hover {
 }
 
 #errorMessage {
- 
-  color: red;
+color: red;
 }
 
 
