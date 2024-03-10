@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <header>
-            <img src="images/Messi.jpg" height="100" />
-            <h1>OA's Futbol Store</h1>
-          </header>
-          <div>
-            <nav class="flex-container">
-              <a href="index.html">Home</a>
-              <a href="products.html">Products</a>
-              <a href="contacts.html">Contacts</a>
-              <a href="login.html">Login</a>
-            </nav>
-          </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Signup | OA's Messi Store</title>
+</head>
+<body>
+    <header>
+        <img src="images/Messi.jpg" height="100px" />
+        <h1>OA's Messi Store</h1>
+    </header>
+    <div class="flex-container">
+        <nav class="flex-container">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+
+    <main class="signup">
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password" required />
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Your Password" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+
+            <button type="button" onclick="validateSignup()">Signup</button>
+        </form>
+
+        
+        <div id="messageBox">
+            <p id="errorMessage"></p>
+        </div>
+    </main>
+
+    <footer>&copy; 2024 OA's Messi Store. All rights reserved.</footer>
+</body>
 </html>

@@ -186,3 +186,145 @@ footer {
 .signup-link:hover {
   text-decoration: underline;
 }
+
+
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+input {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.signup-button {
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.signup-button:hover {
+  background-color: #45A049;
+  opacity: 1;
+}
+
+#messageBox {
+  border: 2px solid #f9f9f9;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 20px;
+}
+
+.remove-button {
+
+  background-color: #4caf50;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.remove-button:hover {
+  
+  background-color: #ff0000;
+  opacity: 1;
+}
+#cartSection {
+  text-align: center;
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border: 2px solid #ddd;
+  border-radius: 10px; 
+}
+
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+input {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45A049;
+  opacity: 1.0;
+}
+
+
+#messageBox {
+  border: 2px solid #f9f9f9;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 20px;
+}
+
+#errorMessage {
+ 
+  color: red;
+}
+
+
+
+
