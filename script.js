@@ -66,7 +66,7 @@ function displayErrorMessage(message) {
   var messageBox = document.getElementById("messageBox");
 
   errorMessage.innerHTML += message + "<br>";
-  errorMessage.style.color = "red"; // Add this line
+  errorMessage.style.color = "red"; 
   messageBox.style.borderColor = "red";
   messageBox.style.backgroundColor = "#ffecec"; 
 }
@@ -76,7 +76,7 @@ function displaySuccessMessage(message) {
   var messageBox = document.getElementById("messageBox");
 
   errorMessage.textContent = message;
-  errorMessage.style.color = "green"; // Add this line
+  errorMessage.style.color = "green"; 
   messageBox.style.borderColor = "#2ecc71"; 
   messageBox.style.backgroundColor = "#e6ffec"; 
 }
