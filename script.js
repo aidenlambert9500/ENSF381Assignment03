@@ -11,30 +11,34 @@ function validateSignup() {
   messageBox.style.borderColor = "#f9f9f9";
   messageBox.style.backgroundColor = "#f9f9f9";
 
+  var errorOccured = false;
   
   if (!isValidUsername(username)) {
       displayErrorMessage("Invalid username format.");
-      return;
+      errorOccured = true;
   }
 
 
   if (!isValidPassword(password)) {
       displayErrorMessage("Invalid password format.");
-      return;
+      errorOccured = true;
   }
 
   
   if (password !== confirmPassword) {
       displayErrorMessage("Passwords do not match.");
-      return;
+      errorOccured = true;
   }
 
   
   if (!isValidEmail(email)) {
       displayErrorMessage("Invalid email format.");
-      return;
+      errorOccured = true;
   }
 
+  if (errorOccured) {
+      return;
+  }
   
   displaySuccessMessage("Signup successful!");
 }
@@ -61,7 +65,7 @@ function displayErrorMessage(message) {
   var errorMessage = document.getElementById("errorMessage");
   var messageBox = document.getElementById("messageBox");
 
-  errorMessage.textContent = message;
+  errorMessage.innerHTML += message + "<br>";
   messageBox.style.borderColor = "red";
   messageBox.style.backgroundColor = "#ffecec"; 
 }
